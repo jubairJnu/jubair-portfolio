@@ -1,4 +1,5 @@
 import Info from "@/component/Info";
+import HomeFeature from "@/component/home/HomeFeature";
 
 const Homepage = () => {
   return (
@@ -6,6 +7,7 @@ const Homepage = () => {
       <div className=" min-h-screen text-white w-full max-w-7xl mx-auto px-5">
        
         <Info />
+        <HomeFeature/>
       </div>
     </div>
   );

@@ -18,7 +18,7 @@ const Navbar = () => {
   return (
     <div className="bg-[#090e1a] ">
       <div className=" flex justify-between items-start py-4 w-full max-w-[1200px] mx-auto  text-slate-100 relative  px-10 ">
-        <div >
+        <div>
           <Image src={logo} alt="Logo" height={50} width={50} />
         </div>
         {/* 2nd div */}
@@ -27,11 +27,11 @@ const Navbar = () => {
         <div
           className={`z[999]  ${
             isOpen
-              ? "visible mt-5  text-white w-full absolute top-14 right-0 "
+              ? "visible mt-5  text-white w-full bg-black bg-opacity-35 backdrop-blur-sm absolute top-14 right-0 "
               : "invisible"
           }  md:visible  `}
         >
-          <div className="md:grid grid-flow-col gap-8 font-semibold ps-4 bg-[#090e1a] mt-2">
+          <div className="flex flex-col md:flex-row  font-semibold ps-4 gap-3">
             <h3 className="cursor-pointer hover:text-sky-500 transition duration-300 hover:delay-100  ">
               Home{" "}
             </h3>
