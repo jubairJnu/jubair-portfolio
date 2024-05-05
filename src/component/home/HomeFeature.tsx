@@ -1,12 +1,12 @@
 import Image from "next/image";
-import nextimg from "@/assest/nextjs-icon-svgrepo-com.svg";
+import nextimg from "@/assest/nextjs-icon.svg";
 import nodeimg from "@/assest/nodejs-icon.svg";
 import reactimg from "@/assest/react-1-logo-svgrepo-com.svg";
 import reduximg from "@/assest/redux.svg";
 import figmaimg from "@/assest/figma-icon.svg";
 import firebaseimg from "@/assest/firebase-1.svg";
 import blogimg from "@/assest/blogs.svg";
-import Projects from "./Projects";
+import Projects from "./Services";
 
 const HomeFeature = () => {
   return (
@@ -20,8 +20,8 @@ const HomeFeature = () => {
             <Image
               src={nextimg}
               alt="skills"
-              width={50}
-              height={50}
+              width={100}
+              height={80}
               className="bg-black p-3 rounded-2xl w-14"
             />
             <Image
