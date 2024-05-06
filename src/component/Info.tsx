@@ -18,17 +18,17 @@ const Info = () => {
           width={270}
           alt="Me"
         />
-        <h1 className="my-2 text-xl font-semibold ">Jubair Abdullah</h1>
+        <h1 className="my-2 text-xl font-semibold ">Abdullah Al Jubair</h1>
         <div className="flex justify-between items-center">
-          <span className="text-2xl text-sky-500">
+          <span className="text-[27px] text-sky-500">
             {" "}
             <FaFacebook />{" "}
           </span>
-          <span className="text-[33px] text-sky-500">
+          <span className="text-[36px] text-sky-500">
             {" "}
             <TiSocialLinkedinCircular />{" "}
           </span>
-          <span className="text-[28px] text-sky-500">
+          <span className="text-[26px] text-sky-500">
             {" "}
             <VscGithub />{" "}
           </span>
@@ -52,7 +52,13 @@ const Info = () => {
             your desired website with latest and modern technologies.
           </p>
         </div>
-        <Button className="w-full md:max-w-40 "> Download Resume</Button>
+
+        <a
+          href="https://drive.google.com/uc?export=download&id=1vYQn5BrLdZYZQykVHEEYQJOJ7shUc-h2"
+          download="jubair-resume.pdf"
+        >
+          <Button className="w-full md:max-w-40 "> Download Resume</Button>
+        </a>
       </div>
     </div>
   );

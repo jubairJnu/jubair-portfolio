@@ -17,7 +17,7 @@ const RealProjects = () => {
     <div>
       {/* 1 */}
 
-      <div>
+      <div className="mt-10">
         <Card className="bg-gradient-to-r from-[#8a026f] to-[#333399] text-white">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5  items-center px-2">
             <div className="grid col-span-2">

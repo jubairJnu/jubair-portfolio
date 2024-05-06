@@ -7,6 +7,8 @@ import figmaimg from "@/assest/figma-icon.svg";
 import firebaseimg from "@/assest/firebase-1.svg";
 import blogimg from "@/assest/blogs.svg";
 import Projects from "./Services";
+import { HiOutlineArrowNarrowRight } from "react-icons/hi";
+import Link from "next/link";
 
 const HomeFeature = () => {
   return (
@@ -16,7 +18,7 @@ const HomeFeature = () => {
         {/* skills */}
         <div className="grid md:col-span-2  bg-gradient-to-r from-[#0c1222] to-[#000003] rounded-lg text-white shadow-[5px_1px_10px_1px_rgba(0,0,0,0.3)] ">
           {/* image */}
-          <div className="grid grid-cols-3 gap-3 justify-items-center items-center px-16 py-5 gap-y-14">
+          <div className="grid grid-cols-3 gap-3 justify-items-center items-center px-16 py-5 gap-y-10">
             <Image
               src={nextimg}
               alt="skills"
@@ -60,15 +62,26 @@ const HomeFeature = () => {
               className="bg-black p-3 rounded-2xl w-14"
             />
           </div>
-
-          <h1 className="text-xl font-bold">Skills</h1>
+          <div className="flex justify-between items-center px-3">
+            <h1 className="text-xl font-bold">Skills</h1>
+            <Link href="/skills">
+            <span className="mt-3 text-2xl font-bold opacity-50 hover:opacity-100 transition-all duration-100 delay-75 cursor-pointer ">
+              <HiOutlineArrowNarrowRight />
+            </span>
+            </Link>
+          </div>
         </div>
         {/* projects */}
         <Projects />
         {/* blogs */}
         <div className="bg-gradient-to-r from-[#0c1222] to-[#000003] rounded-lg text-white shadow-[5px_1px_10px_1px_rgba(0,0,0,0.3)] ">
           <Image src={blogimg} alt="blog" className="p-3" />
-          <h1 className="mt-5 text-xl font-bold">Blogs</h1>
+          <div className="flex justify-between px-2  items-center">
+            <h1 className="mt-5 text-xl font-bold">Blogs</h1>
+            <span className="mt-5 text-2xl font-bold opacity-50 hover:opacity-100 transition-all duration-100 delay-75">
+              <HiOutlineArrowNarrowRight />
+            </span>
+          </div>
         </div>
       </div>
       {/* main div close */}
