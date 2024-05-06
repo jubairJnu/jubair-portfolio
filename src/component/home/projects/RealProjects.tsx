@@ -11,6 +11,7 @@ import Image from "next/image";
 import soeImg from "@/assest/soe.png";
 import dreamImg from "@/assest/d4h.png";
 import artImg from "@/assest/artugrul.png";
+import Link from "next/link";
 
 const RealProjects = () => {
   return (
@@ -29,10 +30,23 @@ const RealProjects = () => {
                 <CardDescription className="text-slate-200"></CardDescription>
               </CardHeader>
               <CardContent>
-                <p>School Management</p>
+                <ul>
+                  <li className="text-lg">
+                    <span className="inline-block w-3 h-3 bg-red-500 rounded-full mr-2"></span>
+                    Buy Course and generate automatic roll number
+                  </li>
+                  <li className="text-slate-200 text-lg">
+                    <span className="inline-block w-3 h-3 bg-yellow-500 rounded-full mr-2"></span>
+                    Student Dashboard to join live class and exam
+                  </li>
+                  <li className="text-slate-200 text-lg">
+                    <span className="inline-block w-3 h-3 bg-green-500 rounded-full mr-2"></span>
+                    Download automatic generated invoice
+                  </li>
+                </ul>
               </CardContent>
               <CardFooter>
-                <p>Card Footer</p>
+                <Link href="https://www.bdsoe.com/">See More..</Link>
               </CardFooter>
             </div>
             <div className="rounded-xl">
@@ -59,10 +73,25 @@ const RealProjects = () => {
                 <CardDescription className="text-slate-200"></CardDescription>
               </CardHeader>
               <CardContent>
-                <p>School Management</p>
+                <ul>
+                  <li className="text-lg">
+                    <span className="inline-block w-3 h-3 bg-red-500 rounded-full mr-2"></span>
+                    Booking Doctor
+                  </li>
+                  <li className="text-slate-200 text-lg">
+                    <span className="inline-block w-3 h-3 bg-yellow-500 rounded-full mr-2"></span>
+                    Paitent invoice making and print{" "}
+                  </li>
+                  <li className="text-slate-200 text-lg">
+                    <span className="inline-block w-3 h-3 bg-green-500 rounded-full mr-2"></span>
+                    Calculating income and expenditure
+                  </li>
+                </ul>
               </CardContent>
               <CardFooter>
-                <p>Card Footer</p>
+                <Link href="https://www.dreamfourhospital.com/">
+                  See More..
+                </Link>
               </CardFooter>
             </div>
             <div className="rounded-xl">
@@ -89,10 +118,23 @@ const RealProjects = () => {
                 <CardDescription className="text-slate-200"></CardDescription>
               </CardHeader>
               <CardContent>
-                <p>School Management</p>
+                <ul>
+                  <li className="text-lg">
+                    <span className="inline-block w-3 h-3 bg-red-500 rounded-full mr-2"></span>
+                    Categories product
+                  </li>
+                  <li className="text-slate-200 text-lg">
+                    <span className="inline-block w-3 h-3 bg-yellow-500 rounded-full mr-2"></span>
+                    Manage Product
+                  </li>
+                  <li className="text-slate-200 text-lg">
+                    <span className="inline-block w-3 h-3 bg-green-500 rounded-full mr-2"></span>
+                    Buy and chat
+                  </li>
+                </ul>
               </CardContent>
               <CardFooter>
-                <p>Card Footer</p>
+                <Link href="https://www.artugrulshop.com/">See More..</Link>
               </CardFooter>
             </div>
             <div className="rounded-xl">
