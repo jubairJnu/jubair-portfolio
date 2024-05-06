@@ -78,15 +78,15 @@ const DemoProjects = () => {
 
               <CardContent>
                 <ul>
-                  <li className="text-xl">
+                  <li className="text-lg">
                     <span className="inline-block w-3 h-3 bg-red-500 rounded-full mr-2"></span>
                     Our Services & Pricing
                   </li>
-                  <li className="text-slate-200 text-xl">
+                  <li className="text-slate-200 text-lg">
                     <span className="inline-block w-3 h-3 bg-yellow-500 rounded-full mr-2"></span>
                     Event Gallery & Testimonial
                   </li>
-                  <li className="text-slate-200 text-xl">
+                  <li className="text-slate-200 text-lg">
                     <span className="inline-block w-3 h-3 bg-green-500 rounded-full mr-2"></span>
                     Event Items & Recent Event
                   </li>
@@ -126,15 +126,15 @@ const DemoProjects = () => {
               </CardHeader>
               <CardContent>
                 <ul>
-                  <li className="text-xl">
+                  <li className="text-lg">
                     <span className="inline-block w-3 h-3 bg-red-500 rounded-full mr-2"></span>
                     Making Donation and see leaderboard
                   </li>
-                  <li className="text-slate-200 text-xl">
+                  <li className="text-slate-200 text-lg">
                     <span className="inline-block w-3 h-3 bg-yellow-500 rounded-full mr-2"></span>
                     Creating testimonial and see statics data
                   </li>
-                  <li className="text-slate-200 text-xl">
+                  <li className="text-slate-200 text-lg">
                     <span className="inline-block w-3 h-3 bg-green-500 rounded-full mr-2"></span>
                     Dynamic theme switcher and crud cloths
                   </li>

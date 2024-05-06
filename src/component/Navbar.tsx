@@ -38,22 +38,22 @@ const Navbar = () => {
             >
               <div className="flex flex-col md:flex-row  font-semibold space-x-4 gap-5  ">
                 <h3 className="cursor-pointer hover:text-sky-500 transition duration-300 hover:delay-100 border-b border-dashed pb-2 md:border-none ms-4">
-                  <Link href="/" onClick={handleOpenChange}>
+                  <Link href="/" onClick={() => setIsOpen(false)}>
                     Home
                   </Link>
                 </h3>
                 <h3 className="cursor-pointer hover:text-sky-500 transition duration-300 hover:delay-100 border-b border-dashed pb-2 md:border-none ">
-                  <Link href="/skills" onClick={handleOpenChange}>
+                  <Link href="/skills" onClick={() => setIsOpen(false)}>
                     Skills{" "}
                   </Link>
                 </h3>
                 <h3 className="cursor-pointer hover:text-sky-500 transition duration-300 hover:delay-100 border-b border-dashed pb-2 md:border-none ">
-                  <Link href="/projects" onClick={handleOpenChange}>
+                  <Link href="/projects" onClick={() => setIsOpen(false)}>
                     Projects{" "}
                   </Link>
                 </h3>
                 <h3 className="cursor-pointer hover:text-sky-500 transition duration-300 hover:delay-100 border-b border-dashed pb-2 md:border-none ">
-                  <Link href="/services" onClick={handleOpenChange}>
+                  <Link href="/services" onClick={() => setIsOpen(false)}>
                     Service
                   </Link>
                 </h3>

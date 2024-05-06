@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { FaFacebook } from "react-icons/fa";
 import { TiSocialLinkedinCircular } from "react-icons/ti";
 import { VscGithub } from "react-icons/vsc";
+import Link from "next/link";
 
 const Info = () => {
   return (
@@ -21,16 +22,18 @@ const Info = () => {
         <h1 className="my-2 text-xl font-semibold ">Abdullah Al Jubair</h1>
         <div className="flex justify-between items-center">
           <span className="text-[27px] text-sky-500">
-            {" "}
-            <FaFacebook />{" "}
+            <Link href="https://www.facebook.com/jubairabdullah.jibon">
+              <FaFacebook />{" "}
+            </Link>
           </span>
           <span className="text-[36px] text-sky-500">
             {" "}
             <TiSocialLinkedinCircular />{" "}
           </span>
           <span className="text-[26px] text-sky-500">
-            {" "}
+            <Link href="https://github.com/jubairJnu"> 
             <VscGithub />{" "}
+            </Link>
           </span>
         </div>
       </div>
