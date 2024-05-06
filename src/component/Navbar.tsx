@@ -18,9 +18,9 @@ const Navbar = () => {
 
   return (
     <div className="bg-[#090e1a] ">
-      <div className="w-full max-w-[1280px] mx-auto">
+      <div className="w-full max-w-[1280px] mx-auto ">
         <header>
-          <div className=" h-6 flex  flex-row justify-between items-center  gap-3 py-10 pt-6   mx-auto px-3 text-slate-100 ">
+          <div className=" h-6 flex  flex-row justify-between items-center  gap-3 py-10 pt-6   mx-auto px-3 text-slate-100  ">
             <div>
               <Link href="/">
                 <Image src={logo} alt="Logo" height={30} width={30} />

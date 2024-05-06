@@ -27,12 +27,13 @@ const Info = () => {
             </Link>
           </span>
           <span className="text-[36px] text-sky-500">
-            {" "}
-            <TiSocialLinkedinCircular />{" "}
+            <Link href="https://www.linkedin.com/in/abdullah-al-jubair-982965253/">
+              <TiSocialLinkedinCircular />{" "}
+            </Link>
           </span>
           <span className="text-[26px] text-sky-500">
-            <Link href="https://github.com/jubairJnu"> 
-            <VscGithub />{" "}
+            <Link href="https://github.com/jubairJnu">
+              <VscGithub />{" "}
             </Link>
           </span>
         </div>
