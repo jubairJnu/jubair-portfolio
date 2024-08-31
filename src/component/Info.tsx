@@ -22,7 +22,7 @@ const Info = () => {
         <h1 className="my-2 text-xl font-semibold ">Abdullah Al Jubair</h1>
         <div className="flex justify-between items-center">
           <span className="text-[27px] text-sky-500">
-            <Link href="https://www.facebook.com/jubairabdullah.jibon">
+            <Link href="https://www.facebook.com/jubairabdullah.dev">
               <FaFacebook />{" "}
             </Link>
           </span>
@@ -52,13 +52,18 @@ const Info = () => {
           </p>
 
           <p className="mt-8">
-            You can <span className="text-orange-500">order</span> me to make
-            your desired website with latest and modern technologies.
+            You can{" "}
+            <Link href="/order">
+              <span className="text-orange-500 hover:text-blue-500">
+                order{" "}
+              </span>
+            </Link>
+            me to make your desired website with latest and modern technologies.
           </p>
         </div>
 
         <a
-          href="https://drive.google.com/uc?export=download&id=1vYQn5BrLdZYZQykVHEEYQJOJ7shUc-h2"
+          href="https://drive.google.com/file/d/14JFerMtqhwveihXoXxlVlxrLVjLotefF/view?usp=drive_link"
           download="jubair-resume.pdf"
         >
           <Button className="w-full md:max-w-40 "> Download Resume</Button>

@@ -57,6 +57,11 @@ const Navbar = () => {
                     Service
                   </Link>
                 </h3>
+                <h3 className="cursor-pointer hover:text-sky-500 transition duration-300 hover:delay-100 border-b border-dashed pb-2 md:border-none ">
+                  <Link href="/blogs" onClick={() => setIsOpen(false)}>
+                    Blogs
+                  </Link>
+                </h3>
               </div>
             </div>
 
