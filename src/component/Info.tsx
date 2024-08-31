@@ -6,6 +6,8 @@ import { FaFacebook } from "react-icons/fa";
 import { TiSocialLinkedinCircular } from "react-icons/ti";
 import { VscGithub } from "react-icons/vsc";
 import Link from "next/link";
+import ContactModal from "./ContactModal";
+
 
 const Info = () => {
   return (
@@ -61,13 +63,19 @@ const Info = () => {
             me to make your desired website with latest and modern technologies.
           </p>
         </div>
+        <div className="flex items-center gap-10">
+          <a
+            href="https://drive.google.com/file/d/14JFerMtqhwveihXoXxlVlxrLVjLotefF/view?usp=drive_link"
+            target="_blank"
+            download="jubair-resume.pdf"
+          >
+            <Button className="w-full md:max-w-40 "> Download Resume</Button>
+          </a>
 
-        <a
-          href="https://drive.google.com/file/d/14JFerMtqhwveihXoXxlVlxrLVjLotefF/view?usp=drive_link"
-          download="jubair-resume.pdf"
-        >
-          <Button className="w-full md:max-w-40 "> Download Resume</Button>
-        </a>
+          {/*  */}
+
+          <ContactModal />
+        </div>
       </div>
     </div>
   );

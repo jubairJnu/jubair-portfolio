@@ -4,19 +4,35 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
+import { useCreateOrderMutation } from "@/redux/features/order.api";
 
 import { FieldValues, useForm } from "react-hook-form";
+import { toast } from "sonner";
 
 const OrderPage = () => {
   const {
     register,
     handleSubmit,
-    watch,
+    reset,
     formState: { errors },
   } = useForm();
 
-  const onSubmit = (data: FieldValues) => {
-    console.log(data);
+  const [AddOrder, { isLoading }] = useCreateOrderMutation();
+
+  const onSubmit = async (data: FieldValues) => {
+    const { name, phone, email, details } = data;
+
+    const orderInfo = { name, phone, email, details };
+
+    const res = await AddOrder(orderInfo).unwrap();
+
+    console.log(res);
+
+    if (res.success) {
+      toast.success("Order Created Successfully");
+    }
+
+    reset();
   };
 
   return (
@@ -86,8 +102,9 @@ const OrderPage = () => {
           <Button
             type="submit"
             className="mt-8 bg-[#000000] text-white w-full "
+            disabled={isLoading}
           >
-            Submit
+            {isLoading ? "Please wait..." : "Submit"}
           </Button>
         </form>
       </div>
