@@ -1,10 +1,10 @@
-import {motion} from "framer-motion";
-import {useInView} from "framer-motion";
-import {useRef} from "react";
-import {ArrowRight, Code as Code2, Layers, Zap} from "lucide-react";
+"use client";
+import {portfolioData} from "@/app/data/portfolio";
 import {Badge} from "@/components/ui/badge";
 import {Button} from "@/components/ui/button";
-import {portfolioData} from "@/data/portfolio";
+import {motion, useInView} from "framer-motion";
+import {ArrowRight, Code as Code2, Layers, Zap} from "lucide-react";
+import {useRef} from "react";
 
 const highlights = [
   {

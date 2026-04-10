@@ -145,8 +145,9 @@ export function HeroSection() {
             <Button
               size="lg"
               className="w-full sm:w-auto gap-2 glow-primary-sm text-base font-semibold px-8"
+              asChild
             >
-              <Link className="flex items-center" href="/#projects">
+              <Link className="" href="/#projects">
                 View Work
                 <ArrowRight className="w-4 h-4" />
               </Link>
@@ -155,6 +156,7 @@ export function HeroSection() {
               size="lg"
               variant="outline"
               className="w-full sm:w-auto gap-2 glass border-border/60 text-base font-medium px-8"
+              asChild
             >
               <a
                 href={portfolioData.personal.github}

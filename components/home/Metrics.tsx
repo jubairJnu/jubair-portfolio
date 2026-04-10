@@ -1,8 +1,9 @@
-import {useRef} from "react";
-import {motion, useInView} from "framer-motion";
-import {Users, Activity, Zap, Package, Shield, GitMerge} from "lucide-react";
+"use client";
+import {portfolioData} from "@/app/data/portfolio";
 import {Badge} from "@/components/ui/badge";
-import {portfolioData} from "@/data/portfolio";
+import {motion, useInView} from "framer-motion";
+import {Activity, GitMerge, Package, Shield, Users, Zap} from "lucide-react";
+import {useRef} from "react";
 
 const iconMap: Record<string, React.ComponentType<{className?: string}>> = {
   Users,

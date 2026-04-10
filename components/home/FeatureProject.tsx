@@ -1,11 +1,15 @@
+"use client";
+
 import {useRef} from "react";
 import {motion, useInView} from "framer-motion";
 import {ArrowUpRight, CircleCheck as CheckCircle2} from "lucide-react";
-import {GithubIcon} from "@/components/icons/social";
+
 import {Badge} from "@/components/ui/badge";
 import {Button} from "@/components/ui/button";
-import {portfolioData} from "@/data/portfolio";
+
 import {cn} from "@/lib/utils";
+import {portfolioData} from "@/app/data/portfolio";
+import {GithubIcon} from "../icons/Social";
 
 const colorMap: Record<string, string> = {
   cyan: "from-cyan-500/10 to-blue-500/10 border-cyan-500/20 hover:border-cyan-500/40",
