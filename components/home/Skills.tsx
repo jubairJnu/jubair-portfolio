@@ -1,8 +1,10 @@
+"use client";
 import {useRef, useState} from "react";
 import {motion, useInView} from "framer-motion";
 import {Badge} from "@/components/ui/badge";
-import {portfolioData} from "@/data/portfolio";
+
 import {cn} from "@/lib/utils";
+import {portfolioData} from "@/app/data/portfolio";
 
 type Category =
   | "all"

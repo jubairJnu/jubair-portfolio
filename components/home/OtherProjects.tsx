@@ -1,10 +1,12 @@
+"use client";
 import {useRef} from "react";
 import {motion, useInView} from "framer-motion";
 import {ArrowUpRight, Star} from "lucide-react";
-import {GithubIcon} from "@/components/icons/social";
+
 import {Badge} from "@/components/ui/badge";
 import {Button} from "@/components/ui/button";
-import {portfolioData} from "@/data/portfolio";
+import {portfolioData} from "@/app/data/portfolio";
+import {GithubIcon} from "../icons/Social";
 
 export function OtherProjects() {
   const ref = useRef(null);

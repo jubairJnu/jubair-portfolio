@@ -1,10 +1,13 @@
+"use client";
+
 import {useRef} from "react";
 import {motion, useInView} from "framer-motion";
 import {Mail, ArrowRight, Sparkles} from "lucide-react";
-import {GithubIcon, TwitterIcon, LinkedinIcon} from "@/components/icons/social";
+
 import {Button} from "@/components/ui/button";
 import {Badge} from "@/components/ui/badge";
-import {portfolioData} from "@/data/portfolio";
+import {portfolioData} from "@/app/data/portfolio";
+import {GithubIcon, LinkedinIcon, TwitterIcon} from "../icons/Social";
 
 const socialLinks = [
   {label: "GitHub", href: portfolioData.personal.github, icon: GithubIcon},

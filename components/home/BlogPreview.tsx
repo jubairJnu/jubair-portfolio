@@ -1,10 +1,12 @@
+"use client";
 import {useRef} from "react";
 import {motion, useInView} from "framer-motion";
-import {Link} from "react-router-dom";
+
 import {ArrowRight, Clock, BookOpen} from "lucide-react";
 import {Badge} from "@/components/ui/badge";
 import {Button} from "@/components/ui/button";
-import {portfolioData} from "@/data/portfolio";
+import {portfolioData} from "@/app/data/portfolio";
+import Link from "next/link";
 
 export function BlogPreview() {
   const ref = useRef(null);
@@ -33,7 +35,7 @@ export function BlogPreview() {
             className="gap-1.5 text-muted-foreground hidden sm:flex"
             asChild
           >
-            <Link to="/blog">
+            <Link href="/blog">
               View all posts
               <ArrowRight className="w-3.5 h-3.5" />
             </Link>
@@ -102,7 +104,7 @@ export function BlogPreview() {
             className="gap-1.5 text-muted-foreground"
             asChild
           >
-            <Link to="/blog">
+            <Link href="/blog">
               View all posts
               <ArrowRight className="w-3.5 h-3.5" />
             </Link>

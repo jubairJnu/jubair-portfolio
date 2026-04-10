@@ -1,9 +1,10 @@
+"use client";
 import {useRef} from "react";
 import {motion, useInView} from "framer-motion";
 import {ArrowUpRight, Download, Package2} from "lucide-react";
 import {Badge} from "@/components/ui/badge";
 import {Button} from "@/components/ui/button";
-import {portfolioData} from "@/data/portfolio";
+import {portfolioData} from "@/app/data/portfolio";
 
 export function Products() {
   const ref = useRef(null);
