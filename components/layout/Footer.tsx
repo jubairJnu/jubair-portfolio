@@ -1,8 +1,9 @@
-import {Link} from "react-router-dom";
+"use client";
+import {portfolioData} from "@/app/data/portfolio";
 import {Mail, Terminal, ArrowUpRight} from "lucide-react";
-import {GithubIcon, TwitterIcon, LinkedinIcon} from "@/components/icons/social";
-import {Separator} from "@/components/ui/separator";
-import {portfolioData} from "@/data/portfolio";
+import {GithubIcon, LinkedinIcon, TwitterIcon} from "../icons/Social";
+import Link from "next/link";
+import {Separator} from "../ui/separator";
 
 const footerLinks = {
   navigation: [
@@ -38,7 +39,7 @@ export function Footer() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="py-12 grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="md:col-span-2 space-y-4">
-            <Link to="/" className="flex items-center gap-2.5 w-fit group">
+            <Link href="/" className="flex items-center gap-2.5 w-fit group">
               <div className="flex items-center justify-center w-8 h-8 rounded-lg bg-primary/10 border border-primary/20">
                 <Terminal className="w-4 h-4 text-primary" />
               </div>
@@ -78,7 +79,7 @@ export function Footer() {
               {footerLinks.navigation.map((link) => (
                 <li key={link.href}>
                   <Link
-                    to={link.href}
+                    href={link.href}
                     className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-200 flex items-center gap-1 group"
                   >
                     {link.label}

@@ -1,3 +1,4 @@
+import {Footer} from "@/components/layout/Footer";
 import {Header} from "@/components/layout/Header";
 import type {Metadata} from "next";
 import {Geist, Geist_Mono} from "next/font/google";
@@ -32,6 +33,7 @@ export default function RootLayout({
         <div className="relative min-h-screen bg-background text-foreground overflow-x-hidden">
           <Header />
           {children}
+          <Footer />
         </div>
       </body>
     </html>
